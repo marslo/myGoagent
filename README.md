@@ -11,9 +11,11 @@ The usage and configuration about Goagent and google_appengine
 # Latest Version
 ## Install
 - Download
-<pre><code>$ wget http://googleappengine.googlecode.com/files/google_appengine_1.8.5.zip
-$ wget https://goagent.googlecode.com/files/goagent-2.1.5.7z
-</code></pre>
+    - [Google App Engine](https://developers.google.com/appengine/downloads)
+        <pre><code>$ wget http://googleappengine.googlecode.com/files/google_appengine_1.8.9.zip</code></pre>
+    - [Goagent](https://github.com/goagent/goagent)
+        <pre><code>$ wget https://goagent.googlecode.com/files/goagent-2.1.5.7z</code></pre>
+
 - Extract
 <pre><code>$ unzip google_appengine_1.8.5.zip
 $ 7zr e goagent-2.1.5.7z -ogoogle_appengine/goagent/
@@ -57,26 +59,26 @@ And use `ln -s`
     <pre><code>$ cp -r Goagent/ google_appengine/
     $ tree google_appengine/ -L 1
     google_appengine
-    ©À©¤©¤ api_server.py
-    ©À©¤©¤ appcfg.py
-    ©À©¤©¤ BUGS
-    ©À©¤©¤ bulkload_client.py
-    ©À©¤©¤ bulkloader.py
-    ©À©¤©¤ demos
-    ©À©¤©¤ dev_appserver.py
-    ©À©¤©¤ download_appstats.py
-    ©À©¤©¤ gen_protorpc.py
-    ©À©¤©¤ goagent
-    ©À©¤©¤ google
-    ©À©¤©¤ google_sql.py
-    ©À©¤©¤ lib
-    ©À©¤©¤ LICENSE
-    ©À©¤©¤ new_project_template
-    ©À©¤©¤ README
-    ©À©¤©¤ RELEASE_NOTES
-    ©À©¤©¤ remote_api_shell.py
-    ©À©¤©¤ tools
-    ©¸©¤©¤ VERSION
+    ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ api_server.py
+    ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ appcfg.py
+    ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ BUGS
+    ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ bulkload_client.py
+    ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ bulkloader.py
+    ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ demos
+    ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ dev_appserver.py
+    ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ download_appstats.py
+    ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ gen_protorpc.py
+    ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ goagent
+    ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ google
+    ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ google_sql.py
+    ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ lib
+    ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ LICENSE
+    ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ new_project_template
+    ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ README
+    ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ RELEASE_NOTES
+    ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ remote_api_shell.py
+    ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ tools
+    ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ VERSION
     </code></pre>
 5. Modify files:
     - **/google_appengine/goagent/local/proxy.ini:**
@@ -128,20 +130,20 @@ And use `ln -s`
 9. Done
 
 
-## ÈçºÎ°²×°
-ÏêÇé²ÎÕÕ: http://code.google.com/p/goagent/issues/detail?can=2&start=0&num=100&q=&colspec=ID%20Type%20Status%20Priority%20Milestone%20Owner%20Summary&groupby=&sort=&id=3473
+## ï¿½ï¿½Î°ï¿½×°
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½: http://code.google.com/p/goagent/issues/detail?can=2&start=0&num=100&q=&colspec=ID%20Type%20Status%20Priority%20Milestone%20Owner%20Summary&groupby=&sort=&id=3473
 
-1. ÔÚhttps://appengine.google.com/ ÉêÇëgoogle app engineµÄappid
-2. ÏÂÔØgoagentÎÈ¶¨°æ http://code.google.com/p/goagent/, ½âÑ¹µÃµ½goagent
-3. ÏÂÔØgoogle agent goagent µÄlinux°æ±¾: http://googleappengine.googlecode.com/, ½âÑ¹µÃµ½google_appengine
-4. ½«goagent¸´ÖÆµ½google_appengineÖÐ
-5. ÐÞ¸ÄÎÄ¼þ£º
+1. ï¿½ï¿½https://appengine.google.com/ ï¿½ï¿½ï¿½ï¿½google app engineï¿½ï¿½appid
+2. ï¿½ï¿½ï¿½ï¿½goagentï¿½È¶ï¿½ï¿½ï¿½ http://code.google.com/p/goagent/, ï¿½ï¿½Ñ¹ï¿½Ãµï¿½goagent
+3. ï¿½ï¿½ï¿½ï¿½google agent goagent ï¿½ï¿½linuxï¿½æ±¾: http://googleappengine.googlecode.com/, ï¿½ï¿½Ñ¹ï¿½Ãµï¿½google_appengine
+4. ï¿½ï¿½goagentï¿½ï¿½ï¿½Æµï¿½google_appengineï¿½ï¿½
+5. ï¿½Þ¸ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½
     - **/google_appengine/goagent/local/proxy.ini:**
-        - ¸ñÊ½£º½«appid¸ÄÎªÉêÇëµÄappid
+        - ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½appidï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½appid
         <pre><code>[gae]
-        appid = <ÉêÇëµÄAppID>
+        appid = <ï¿½ï¿½ï¿½ï¿½ï¿½AppID>
         </code></pre>
-        - Àý:
+        - ï¿½ï¿½:
         <pre><code>$ head proxy.ini
         [listen]
         ip = 127.0.0.1
@@ -154,10 +156,10 @@ And use `ln -s`
         path = /2
         </code></pre>
     - **/google_appengine/goagent/server/python/app.yaml:**
-        - ¸ñÊ½: ½«application¸ÄÎªÉêÇëµÄappid
-        <pre><code>application: <ÉêÇëµÄAppID>
+        - ï¿½ï¿½Ê½: ï¿½ï¿½applicationï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½appid
+        <pre><code>application: <ï¿½ï¿½ï¿½ï¿½ï¿½AppID>
         </code></pre>
-        - Àý:
+        - ï¿½ï¿½:
         <pre><code>$ head app.yaml
         application: woainvzu
         version: 1
@@ -169,23 +171,23 @@ And use `ln -s`
         script: wsgi_old.app
         secure: optional
         </code></pre>
-6. ÉÏ´«:
-    - ÔÚgoogle_appengineÄ¿Â¼ÏÂÖ´ÐÐ
+6. ï¿½Ï´ï¿½:
+    - ï¿½ï¿½google_appengineÄ¿Â¼ï¿½ï¿½Ö´ï¿½ï¿½
     <pre><code>$ cd google_appengine
     $ sudo python appcfg.py update goagent/server/python</code></pre>
-    - ÌáÊ¾ºóÊäÈëgmailÕË»§ºÍÃÜÂë
-7. FirefoxÉèÖÃ:
-    - ÏÂÔØ²å¼þ: autoproxy £¨https://addons.mozilla.org/en-us/firefox/addon/autoproxy/£©
-    - ¾ßÌåÉèÖÃ: http://www.i7086.com/gugeyingyonggoagentrangninziyoufangwenwangluotuwenjiaocheng
-8. ÔËÐÐgoagent:
+    - ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½gmailï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+7. Firefoxï¿½ï¿½ï¿½ï¿½:
+    - ï¿½ï¿½ï¿½Ø²ï¿½ï¿½: autoproxy ï¿½ï¿½https://addons.mozilla.org/en-us/firefox/addon/autoproxy/ï¿½ï¿½
+    - ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½: http://www.i7086.com/gugeyingyonggoagentrangninziyoufangwenwangluotuwenjiaocheng
+8. ï¿½ï¿½ï¿½ï¿½goagent:
     <pre><code>$ cd /google_appengine/goagent/local
     $ python proxy,py
     </code></pre>
-9. Íê³É
+9. ï¿½ï¿½ï¿½
 
 # Q&A
-1. ÖØÐÂÉú³ÉÒ»´Î¶þ´ÎÑéÖ¤µÄÃÜÂë
-2. ½«goagent/server/python/app.yamlÖÐµÄversionÉèÎª2£¬¼´£ºversion: 2
-3. ÐÞ¸Ä±¾»úµÄDNSÎª8.8.8.8
+1. ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½Î¶ï¿½ï¿½ï¿½ï¿½ï¿½Ö¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+2. ï¿½ï¿½goagent/server/python/app.yamlï¿½Ðµï¿½versionï¿½ï¿½Îª2ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½version: 2
+3. ï¿½Þ¸Ä±ï¿½ï¿½ï¿½ï¿½ï¿½DNSÎª8.8.8.8
 
-Ê¹ÓÃgoogle_appengineµÄÄ¿µÄÊÇ·ÀÖ¹goagentÔÚVÉÏ´«µÄÊ±ºò×²Ç½¡£¡£µ«ÊÇ×î½üËÆºõÊ¹ÓÃÁËgoogle_appengine»¹ÊÇÒª×²Ç½£¬ËùÒÔÔÚÉÏ´«µÄÊ±ºò³öÏÖÎÊÌâ£¬ËùÒÔÐèÒª½«DNSÉèÎª8.8.8.8£¬ÕâÊÇgoogleµÄ·þÎñÆ÷ip»¹ÊÇÊ²Ã´¶«Î÷À´×Å¡£¡£
+Ê¹ï¿½ï¿½google_appengineï¿½ï¿½Ä¿ï¿½ï¿½ï¿½Ç·ï¿½Ö¹goagentï¿½ï¿½Vï¿½Ï´ï¿½ï¿½ï¿½Ê±ï¿½ï¿½×²Ç½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æºï¿½Ê¹ï¿½ï¿½ï¿½ï¿½google_appengineï¿½ï¿½ï¿½ï¿½Òª×²Ç½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½â£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½DNSï¿½ï¿½Îª8.8.8.8ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½googleï¿½Ä·ï¿½ï¿½ï¿½ï¿½ï¿½ipï¿½ï¿½ï¿½ï¿½Ê²Ã´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å¡ï¿½ï¿½ï¿½
