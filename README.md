@@ -11,10 +11,8 @@ The usage and configuration about Goagent and google_appengine
 # Latest Version
 ## Install
 - Download
-    - [Google App Engine](https://developers.google.com/appengine/downloads)
-        <pre><code>$ wget http://googleappengine.googlecode.com/files/google_appengine_1.8.9.zip</code></pre>
-    - [Goagent](https://github.com/goagent/goagent)
-        <pre><code>$ wget https://goagent.googlecode.com/files/goagent-2.1.5.7z</code></pre>
+    <pre><code>$ wget http://googleappengine.googlecode.com/files/google_appengine_1.8.9.zip
+    $ wget https://nodeload.github.com/goagent/goagent/legacy.zip/3.0</code></pre>
 
 - Extract
 <pre><code>$ unzip google_appengine_1.8.5.zip
