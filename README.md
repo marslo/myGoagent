@@ -13,7 +13,7 @@ The usage and configuration about Goagent and google_appengine
 ## Install
 - Download
     <pre><code>$ wget http://googleappengine.googlecode.com/files/google_appengine_1.8.9.zip
-    $ wget https://nodeload.github.com/goagent/goagent/legacy.zip/3.0</code></pre>
+    $ wget https://github.com/goagent/goagent/archive/v3.1.5.zip</code></pre>
 
 - Extract
 <pre><code>$ unzip google_appengine_1.8.5.zip
