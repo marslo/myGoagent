@@ -6,7 +6,8 @@ The usage and configuration about Goagent and google_appengine
 - [Google Appengine](https://developers.google.com/appengine/)
     - [Google App Engine SDK for Python](https://developers.google.com/appengine/downloads#Google_App_Engine_SDK_for_Python)
 - [Goagent](http://www.goagent.org/)
-    - [Download](https://code.google.com/p/goagent/downloads/list)
+    - [Google Doc](https://code.google.com/p/goagent/downloads/list)
+    - [Github](https://github.com/goagent/goagent)
 
 # Latest Version
 ## Install
