@@ -58,26 +58,26 @@ And use `ln -s`
     <pre><code>$ cp -r Goagent/ google_appengine/
     $ tree google_appengine/ -L 1
     google_appengine
-    ������ api_server.py
-    ������ appcfg.py
-    ������ BUGS
-    ������ bulkload_client.py
-    ������ bulkloader.py
-    ������ demos
-    ������ dev_appserver.py
-    ������ download_appstats.py
-    ������ gen_protorpc.py
-    ������ goagent
-    ������ google
-    ������ google_sql.py
-    ������ lib
-    ������ LICENSE
-    ������ new_project_template
-    ������ README
-    ������ RELEASE_NOTES
-    ������ remote_api_shell.py
-    ������ tools
-    ������ VERSION
+    ├── api_server.py
+    ├── appcfg.py
+    ├── BUGS
+    ├── bulkload_client.py
+    ├── bulkloader.py
+    ├── demos
+    ├── dev_appserver.py
+    ├── download_appstats.py
+    ├── gen_protorpc.py
+    ├── goagent
+    ├── google
+    ├── google_sql.py
+    ├── lib
+    ├── LICENSE
+    ├── new_project_template
+    ├── README
+    ├── RELEASE_NOTES
+    ├── remote_api_shell.py
+    ├── tools
+    └── VERSION
     </code></pre>
 5. Modify files:
     - **/google_appengine/goagent/local/proxy.ini:**
@@ -129,20 +129,20 @@ And use `ln -s`
 9. Done
 
 
-## ��ΰ�װ
-�������: http://code.google.com/p/goagent/issues/detail?can=2&start=0&num=100&q=&colspec=ID%20Type%20Status%20Priority%20Milestone%20Owner%20Summary&groupby=&sort=&id=3473
+## 如何安装
+详情参照: http://code.google.com/p/goagent/issues/detail?can=2&start=0&num=100&q=&colspec=ID%20Type%20Status%20Priority%20Milestone%20Owner%20Summary&groupby=&sort=&id=3473
 
-1. ��https://appengine.google.com/ ����google app engine��appid
-2. ����goagent�ȶ��� http://code.google.com/p/goagent/, ��ѹ�õ�goagent
-3. ����google agent goagent ��linux�汾: http://googleappengine.googlecode.com/, ��ѹ�õ�google_appengine
-4. ��goagent���Ƶ�google_appengine��
-5. �޸��ļ���
+1. 在https://appengine.google.com/ 申请google app engine的appid
+2. 下载goagent稳定版 http://code.google.com/p/goagent/, 解压得到goagent
+3. 下载google agent goagent 的linux版本: http://googleappengine.googlecode.com/, 解压得到google_appengine
+4. 将goagent复制到google_appengine中
+5. 修改文件：
     - **/google_appengine/goagent/local/proxy.ini:**
-        - ��ʽ����appid��Ϊ�����appid
+        - 格式：将appid改为申请的appid
         <pre><code>[gae]
-        appid = <�����AppID>
+        appid = <申请的AppID>
         </code></pre>
-        - ��:
+        - 例:
         <pre><code>$ head proxy.ini
         [listen]
         ip = 127.0.0.1
@@ -155,10 +155,10 @@ And use `ln -s`
         path = /2
         </code></pre>
     - **/google_appengine/goagent/server/python/app.yaml:**
-        - ��ʽ: ��application��Ϊ�����appid
-        <pre><code>application: <�����AppID>
+        - 格式: 将application改为申请的appid
+        <pre><code>application: <申请的AppID>
         </code></pre>
-        - ��:
+        - 例:
         <pre><code>$ head app.yaml
         application: woainvzu
         version: 1
@@ -170,23 +170,23 @@ And use `ln -s`
         script: wsgi_old.app
         secure: optional
         </code></pre>
-6. �ϴ�:
-    - ��google_appengineĿ¼��ִ��
+6. 上传:
+    - 在google_appengine目录下执行
     <pre><code>$ cd google_appengine
     $ sudo python appcfg.py update goagent/server/python</code></pre>
-    - ��ʾ������gmail�˻�������
-7. Firefox����:
-    - ���ز��: autoproxy ��https://addons.mozilla.org/en-us/firefox/addon/autoproxy/��
-    - ��������: http://www.i7086.com/gugeyingyonggoagentrangninziyoufangwenwangluotuwenjiaocheng
-8. ����goagent:
+    - 提示后输入gmail账户和密码
+7. Firefox设置:
+    - 下载插件: autoproxy （https://addons.mozilla.org/en-us/firefox/addon/autoproxy/）
+    - 具体设置: http://www.i7086.com/gugeyingyonggoagentrangninziyoufangwenwangluotuwenjiaocheng
+8. 运行goagent:
     <pre><code>$ cd /google_appengine/goagent/local
     $ python proxy,py
     </code></pre>
-9. ���
+9. 完成
 
 # Q&A
-1. ��������һ�ζ�����֤������
-2. ��goagent/server/python/app.yaml�е�version��Ϊ2������version: 2
-3. �޸ı�����DNSΪ8.8.8.8
+1. 重新生成一次二次验证的密码
+2. 将goagent/server/python/app.yaml中的version设为2，即：version: 2
+3. 修改本机的DNS为8.8.8.8
 
-ʹ��google_appengine��Ŀ���Ƿ�ֹgoagent��V�ϴ���ʱ��ײǽ������������ƺ�ʹ����google_appengine����Ҫײǽ���������ϴ���ʱ��������⣬������Ҫ��DNS��Ϊ8.8.8.8������google�ķ�����ip����ʲô�������š���
+使用google_appengine的目的是防止goagent在V上传的时候撞墙。。但是最近似乎使用了google_appengine还是要撞墙，所以在上传的时候出现问题，所以需要将DNS设为8.8.8.8，这是google的服务器ip还是什么东西来着。。
