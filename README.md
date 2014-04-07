@@ -8,7 +8,6 @@ The usage and configuration about Goagent and google_appengine
 - [Goagent](http://www.goagent.org/)
     - [Google Doc](https://code.google.com/p/goagent/downloads/list)
     - [Github](https://github.com/goagent/goagent)
-- [FoxyProxy]
 
 # Latest Version
 ## Install
@@ -49,16 +48,6 @@ $ runProxy
 </code></pre>
 - Or copy `Scripts/runProxy` to <SOME_PATH>
 And use `ln -s`
-
-# Configurations in FoxyProxy
-## Download 
-- Download FoxyProxy Standard 4.2.4 by click [here](https://addons.mozilla.org/firefox/downloads/file/241444/foxyproxy_standard-4.2.4-fx+tb+sm.xpi?src=dp-btn-primary)
-
-## Configuraton
-- Select `Tools` -> `Add-ons` in Firefox (Or click shortcut key <kdb>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>A</kbd> in Linux/Ubuntu)
-- Select `Preferences` button of **FoxyProxy Standard** in **Extensions** field
-- Select `Add New Proxy` in **Proxies** Tab
-
 
 # Older version
 ## How to install
@@ -138,7 +127,6 @@ And use `ln -s`
     $ python proxy,py
     </code></pre>
 9. Done
-
 
 ## 如何安装
 详情参照: http://code.google.com/p/goagent/issues/detail?can=2&start=0&num=100&q=&colspec=ID%20Type%20Status%20Priority%20Milestone%20Owner%20Summary&groupby=&sort=&id=3473
