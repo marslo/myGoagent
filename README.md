@@ -8,6 +8,7 @@ The usage and configuration about Goagent and google_appengine
 - [Goagent](http://www.goagent.org/)
     - [Google Doc](https://code.google.com/p/goagent/downloads/list)
     - [Github](https://github.com/goagent/goagent)
+- [FoxyProxy]
 
 # Latest Version
 ## Install
@@ -48,6 +49,16 @@ $ runProxy
 </code></pre>
 - Or copy `Scripts/runProxy` to <SOME_PATH>
 And use `ln -s`
+
+# Configurations in FoxyProxy
+## Download 
+- Download FoxyProxy Standard 4.2.4 by click [here](https://addons.mozilla.org/firefox/downloads/file/241444/foxyproxy_standard-4.2.4-fx+tb+sm.xpi?src=dp-btn-primary)
+
+## Configuraton
+- Select `Tools` -> `Add-ons` in Firefox (Or click shortcut key <kdb>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>A</kbd> in Linux/Ubuntu)
+- Select `Preferences` button of **FoxyProxy Standard** in **Extensions** field
+- Select `Add New Proxy` in **Proxies** Tab
+
 
 # Older version
 ## How to install
