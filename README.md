@@ -9,16 +9,20 @@ The usage and configuration about Goagent and google_appengine
     - [Google Doc](https://code.google.com/p/goagent/downloads/list)
     - [Github](https://github.com/goagent/goagent)
 
-# Latest Version
-## Install
+## Download and Installation
 - Download
-    <pre><code>$ wget http://googleappengine.googlecode.com/files/google_appengine_1.8.9.zip
-    $ wget https://github.com/goagent/goagent/archive/v3.1.5.zip</code></pre>
+    <pre><code>┌─ (marslo@MarsloJiao ~) ->
+    └─ $ wget https://storage.googleapis.com/appengine-sdks/featured/google_appengine_1.9.6.zip
+    ┌─ (marslo@MarsloJiao ~) ->
+    └─ $ wget https://nodeload.github.com/goagent/goagent/legacy.zip/3.0
+    </code></pre>
 
 - Extract
-<pre><code>$ unzip google_appengine_1.8.5.zip
-$ 7zr e goagent-2.1.5.7z -ogoogle_appengine/goagent/
-</code></pre>
+    <pre><code>┌─ (marslo@MarsloJiao ~) ->
+    └─ $ unzip google_appengine_1.9.6.zip
+    ┌─ (marslo@MarsloJiao ~) ->
+    └─ $ unzip goagent-goagent-v3.1.18-27-g0772f4e.zip
+    </code></pre>
 
 ## Configuration for Latest version (goagent v3.1.18)
 - Details can all be found at [Goagent Wiki](https://code.google.com/p/goagent/wiki/GoAgent_Linux); If the official wiki cannot be opened, Details as below
