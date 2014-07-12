@@ -61,15 +61,15 @@ The usage and configuration about Goagent and google_appengine
 ### Upload and Run
 - Upload
     <pre><code>┌─ (marslo@MarsloJiao ~) ->
-    └─ $ python <Goagnet_PATH>/server/uploader.zip
+    └─ $ python \<Goagnet_PATH\>/server/uploader.zip
     </code></pre>
 
 - Run goagent
     <pre><code>┌─ (marslo@MarsloJiao ~) ->
-    └─ $ python <Goagent_PATH>/local/proxy.py
+    └─ $ python \<Goagent_PATH\>/local/proxy.py
     OR
     ┌─ (marslo@MarsloJiao ~) ->
-    └─ $ python <Goagent_PATH>/local/goagent-gtk.py
+    └─ $ python \<Goagent_PATH\>/local/goagent-gtk.py
     </code></pre>
 
 
