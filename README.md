@@ -20,7 +20,56 @@ The usage and configuration about Goagent and google_appengine
 $ 7zr e goagent-2.1.5.7z -ogoogle_appengine/goagent/
 </code></pre>
 
-## Configuration
+## Configuration for Latest version (goagent v3.1.18)
+- Details can all be found at [Goagent Wiki](https://code.google.com/p/goagent/wiki/GoAgent_Linux); If the official wiki cannot be opened, Details as below
+
+### Environment Dependences installation
+- The commands
+    <pre><code>┌─ (marslo@MarsloJiao ~) ->
+    └─ $ sudo apt-get install python-dev python-greenlet python-gevent python-vte python-openssl python-crypto python-appindicator</code></pre>
+
+- Mandatory selections
+    - Python 2 (2.7 is recommend)
+    - gevent 1.0: for multithreaded
+    - greenlet: dependence of gevent
+    - python-vte: The GUI lib based on GTK
+    - python-openssl 0.13: For generate CA.crt
+    - pycrypto: For RC4 crypto
+    - python-appindicator: The indicator stuff in Unity
+
+### Gevent installation:
+- Installation by automatic
+    <pre><code>┌─ (marslo@MarsloJiao ~) ->
+    └─ $ sudo apt-get install python-dev python-pip && sudo pip install gevent --upgrade
+    </code></pre>
+
+- Installation by manually
+    - For gevent 0.4.x
+    <pre><code>┌─ (marslo@MarsloJiao ~) ->
+    └─ $ wget http://mirrors.aliyun.com/pypi/packages/source/g/greenlet/greenlet-0.4.2.zip && unzip greenlet-0.4.2.zip && cd greenlet-0.4.2 && sudo python setup.py install
+    </code></pre>
+
+    - For gevent 1.x
+    <pre><code>┌─ (marslo@MarsloJiao ~) ->
+    └─ $ wget http://mirrors.aliyun.com/pypi/packages/source/g/gevent/gevent-1.0.tar.gz && tar xvzpf gevent-1.0.tar.gz && cd gevent-1.0 && sudo python setup.py install
+    </code></pre>
+
+### Upload and Run
+- Upload
+    <pre><code>┌─ (marslo@MarsloJiao ~) ->
+    └─ $ python <Goagnet_PATH>/server/uploader.zip
+    </code></pre>
+
+- Run goagent
+    <pre><code>┌─ (marslo@MarsloJiao ~) ->
+    └─ $ python <Goagent_PATH>/local/proxy.py
+    OR
+    ┌─ (marslo@MarsloJiao ~) ->
+    └─ $ python <Goagent_PATH>/local/goagent-gtk.py
+    </code></pre>
+
+
+## Configuration for older Goagent version
 - goagent/local/proxy.ini
     - appid = <YourID>
     - For example:
