@@ -100,11 +100,13 @@ The usage and configuration about Goagent and google_appengine
     <pre><code>[gae]
     appid = woainvzu
     </code></pre></i>
+
 - <i>goagent/server/python/app.yaml
     - application: <YourID>
     - For example:
     <pre><code>application: woainvzu
     </code></pre></i>
+
 - <i>Update configure
 <pre><code>$ python appcfg.py update goagent/server/python/
 </code></pre></i>
