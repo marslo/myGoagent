@@ -93,19 +93,19 @@ The usage and configuration about Goagent and google_appengine
     └─ $ python [GOAGENT_PATH]/local/goagent-gtk.py
     </code></pre>
 
-## _Configuration for older Goagent version_
+## <i>Configuration for older Goagent version</i>
 - <i>goagent/local/proxy.ini
     - appid = <YourID>
     - For example:
     <pre><code>[gae]
     appid = woainvzu
-    </code></pre>_
-- goagent/server/python/app.yaml
+    </code></pre></i>
+- <i>goagent/server/python/app.yaml
     - application: <YourID>
     - For example:
     <pre><code>application: woainvzu
-    </code></pre>
-- Update configure
+    </code></pre></i>
+- <i>Update configure
 <pre><code>$ python appcfg.py update goagent/server/python/
 </code></pre></i>
 
