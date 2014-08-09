@@ -58,6 +58,27 @@ The usage and configuration about Goagent and google_appengine
     └─ $ wget http://mirrors.aliyun.com/pypi/packages/source/g/gevent/gevent-1.0.tar.gz && tar xvzpf gevent-1.0.tar.gz && cd gevent-1.0 && sudo python setup.py install
     </code></pre>
 
+### Configuration
+- Copy/Move `goagent` folder to `google_appengine`
+    <pre><code>┌─ (marslo@MJ ~/Tools/Software/Applications/Proxy) ->
+    └─ $ mv goagent/ google_appengine/
+    </code></pre>
+
+- Edit `goagent/local/proxy.ini`
+    - appid = <YourID>
+    - For example:
+        <pre><code>[gae]
+        appid = woainvzu-9
+        </code></pre>
+- Edit `goagent/server/python/app.yaml`
+    - application: <YourID>
+    - For example:
+        <pre><code>application: woainvzu-9
+        </code></pre>
+- Update configure (By using google_appengine)
+    <pre><code>$ python appcfg.py update goagent/server/gae/
+    </code></pre>
+
 ### Upload and Run
 - Upload
     <pre><code>┌─ (marslo@MarsloJiao ~) ->
@@ -72,14 +93,13 @@ The usage and configuration about Goagent and google_appengine
     └─ $ python [GOAGENT_PATH]/local/goagent-gtk.py
     </code></pre>
 
-
-## Configuration for older Goagent version
-- goagent/local/proxy.ini
+## _Configuration for older Goagent version_
+- _goagent/local/proxy.ini
     - appid = <YourID>
     - For example:
     <pre><code>[gae]
     appid = woainvzu
-    </code></pre>
+    </code></pre>_
 - goagent/server/python/app.yaml
     - application: <YourID>
     - For example:
