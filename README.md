@@ -94,7 +94,7 @@ The usage and configuration about Goagent and google_appengine
     </code></pre>
 
 ## _Configuration for older Goagent version_
-- _goagent/local/proxy.ini
+- <i>goagent/local/proxy.ini
     - appid = <YourID>
     - For example:
     <pre><code>[gae]
@@ -107,7 +107,7 @@ The usage and configuration about Goagent and google_appengine
     </code></pre>
 - Update configure
 <pre><code>$ python appcfg.py update goagent/server/python/
-</code></pre>
+</code></pre></i>
 
 ## Run Goagent
 - Run in Terminal:
