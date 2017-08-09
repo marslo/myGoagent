@@ -96,7 +96,7 @@ The usage and configuration about Goagent and google_appengine
       ┌─ (marslo@MarsloJiao ~) ->
       └─ $ python [GOAGENT_PATH]/local/goagent-gtk.py
 
-## _Configuration for older Goagent version_
+## Configuration for older Goagent version
 
 - <i>goagent/local/proxy.ini
     
@@ -155,7 +155,7 @@ And use `ln -s`
        ├── lib
        ├── LICENSE
        ├── new_project_template
-       ── README
+       ├── README
        ├── RELEASE_NOTES
        ├── remote_api_shell.py
        ├── tools
