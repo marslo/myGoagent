@@ -11,26 +11,28 @@ The usage and configuration about Goagent and google_appengine
 
 ## Download and Installation
 - Download
-    <pre><code>┌─ (marslo@MarsloJiao ~) ->
-    └─ $ wget https://storage.googleapis.com/appengine-sdks/featured/google_appengine_1.9.6.zip
-    ┌─ (marslo@MarsloJiao ~) ->
-    └─ $ wget https://nodeload.github.com/goagent/goagent/legacy.zip/3.0
-    </code></pre>
+
+        ┌─ (marslo@MarsloJiao ~) ->
+        └─ $ wget https://storage.googleapis.com/appengine-sdks/featured/google_appengine_1.9.6.zip
+        ┌─ (marslo@MarsloJiao ~) ->
+        └─ $ wget https://nodeload.github.com/goagent/goagent/legacy.zip/3.0
+    
 
 - Extract
-    <pre><code>┌─ (marslo@MarsloJiao ~) ->
-    └─ $ unzip google_appengine_1.9.6.zip
-    ┌─ (marslo@MarsloJiao ~) ->
-    └─ $ unzip goagent-goagent-v3.1.18-27-g0772f4e.zip
-    </code></pre>
+
+        ┌─ (marslo@MarsloJiao ~) ->
+        └─ $ unzip google_appengine_1.9.6.zip
+        ┌─ (marslo@MarsloJiao ~) ->
+        └─ $ unzip goagent-goagent-v3.1.18-27-g0772f4e.zip
 
 ## Configuration for Latest version (goagent v3.1.18)
 - Details can all be found at [Goagent Wiki](https://code.google.com/p/goagent/wiki/GoAgent_Linux); If the official wiki cannot be opened, Details as below
 
 ### Environment Dependences installation
 - The commands
-    <pre><code>┌─ (marslo@MarsloJiao ~) ->
-    └─ $ sudo apt-get install python-dev python-greenlet python-gevent python-vte python-openssl python-crypto python-appindicator</code></pre>
+
+        ┌─ (marslo@MarsloJiao ~) ->
+        └─ $ sudo apt-get install python-dev python-greenlet python-gevent python-vte python-openssl python-crypto python-appindicator
 
 - Mandatory selections
     - Python 2 (2.7 is recommend)
@@ -43,84 +45,89 @@ The usage and configuration about Goagent and google_appengine
 
 ### Gevent installation:
 - Installation by automatic
-    <pre><code>┌─ (marslo@MarsloJiao ~) ->
-    └─ $ sudo apt-get install python-dev python-pip && sudo pip install gevent --upgrade
-    </code></pre>
-
+    
+        ┌─ (marslo@MarsloJiao ~) ->
+        └─ $ sudo apt-get install python-dev python-pip && sudo pip install gevent --upgrade
 - Installation by manually
     - For gevent 0.4.x
-    <pre><code>┌─ (marslo@MarsloJiao ~) ->
-    └─ $ wget http://mirrors.aliyun.com/pypi/packages/source/g/greenlet/greenlet-0.4.2.zip && unzip greenlet-0.4.2.zip && cd greenlet-0.4.2 && sudo python setup.py install
-    </code></pre>
+    
+            ┌─ (marslo@MarsloJiao ~) ->
+            └─ $ wget http://mirrors.aliyun.com/pypi/packages/source/g/greenlet/greenlet-0.4.2.zip && unzip greenlet-0.4.2.zip && cd greenlet-0.4.2 && sudo python setup.py install
 
     - For gevent 1.x
-    <pre><code>┌─ (marslo@MarsloJiao ~) ->
-    └─ $ wget http://mirrors.aliyun.com/pypi/packages/source/g/gevent/gevent-1.0.tar.gz && tar xvzpf gevent-1.0.tar.gz && cd gevent-1.0 && sudo python setup.py install
-    </code></pre>
+    
+            ┌─ (marslo@MarsloJiao ~) ->
+            └─ $ wget http://mirrors.aliyun.com/pypi/packages/source/g/gevent/gevent-1.0.tar.gz && tar xvzpf gevent-1.0.tar.gz && cd gevent-1.0 && sudo python setup.py install
+
 
 ### Configuration
 - Copy/Move `goagent` folder to `google_appengine`
-    <pre><code>┌─ (marslo@MJ ~/Tools/Software/Applications/Proxy) ->
-    └─ $ mv goagent/ google_appengine/
-    </code></pre>
-
+    
+        ┌─ (marslo@MJ ~/Tools/Software/Applications/Proxy) ->
+        └─ $ mv goagent/ google_appengine/
 - Edit `goagent/local/proxy.ini`
     - appid = <YourID>
     - For example:
-        <pre><code>[gae]
-        appid = woainvzu-9
-        </code></pre>
+        
+            [gae]
+            appid = woainvzu-9
+
 - Edit `goagent/server/python/app.yaml`
     - application: <YourID>
     - For example:
-        <pre><code>application: woainvzu-9
-        </code></pre>
+        
+            application: woainvzu-9
+        
 - Update configure (By using google_appengine)
-    <pre><code>$ python appcfg.py update goagent/server/gae/
+    
+        $ python appcfg.py update goagent/server/gae/
     </code></pre>
 
 ### Upload and Run
 - Upload
-    <pre><code>┌─ (marslo@MarsloJiao ~) ->
-    └─ $ python [GOAGENT_PATH]/server/uploader.zip
-    </code></pre>
+    
+        ┌─ (marslo@MarsloJiao ~) ->
+        └─ $ python [GOAGENT_PATH]/server/uploader.zip
 
 - Run goagent
-    <pre><code>┌─ (marslo@MarsloJiao ~) ->
-    └─ $ python [GOAGENT_PATH]/local/proxy.py
-    OR
-    ┌─ (marslo@MarsloJiao ~) ->
-    └─ $ python [GOAGENT_PATH]/local/goagent-gtk.py
-    </code></pre>
+    
+        ┌─ (marslo@MarsloJiao ~) ->
+        └─ $ python [GOAGENT_PATH]/local/proxy.py
+        OR
+        ┌─ (marslo@MarsloJiao ~) ->
+        └─ $ python [GOAGENT_PATH]/local/goagent-gtk.py
 
 ## _Configuration for older Goagent version_
 
 - <i>goagent/local/proxy.ini
-    <pre><code>...
-    [gae]
-    appid = woainvzu
-    ...
-    </code></pre></i>
+    
+        ...
+        [gae]
+        appid = woainvzu
+        ...
 
 - <i>goagent/server/python/app.yaml
-    <pre><code>application: woainvzu
-    ...
-    </code></pre></i>
-
+    
+        application: woainvzu
+        ...
+        
 - <i>Update configure
-    <pre><code>$ python appcfg.py update goagent/server/python/
-    </code></pre></i>
+    
+        $ python appcfg.py update goagent/server/python/
 
 ## Run Goagent
 - Run in Terminal:
-<pre><code>$ python <Path_to_GoogleAppEngine>/google_appengine/goagent/local/proxy.py
-</code></pre>
+
+        $ python <Path_to_GoogleAppEngine>/google_appengine/goagent/local/proxy.py
+
+
 - Run as command:
-<pre><code>$ cat "python <Path_to_GoogleAppEngine>/google_appengine/goagent/local/proxy.py" > runProxy
-$ chmod +x runProxy
-$ sudo ln -s <PATH_TO_RUNPROXY>/runProxy /usr/bin/runProxy
-$ runProxy
-</code></pre>
+
+        $ cat "python <Path_to_GoogleAppEngine>/google_appengine/goagent/local/proxy.py" > runProxy
+        $ chmod +x runProxy
+        $ sudo ln -s <PATH_TO_RUNPROXY>/runProxy /usr/bin/runProxy
+        $ runProxy
+
 - Or copy `Scripts/runProxy` to <SOME_PATH>
 And use `ln -s`
 
