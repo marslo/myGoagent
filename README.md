@@ -69,14 +69,14 @@ The usage and configuration about Goagent and google_appengine
     - appid = <YourID>
     - For example:
         
-        [gae]
-        appid = woainvzu-9
+          [gae]
+          appid = woainvzu-9
 
 - Edit `goagent/server/python/app.yaml`
     - application: <YourID>
     - For example:
-        
-        application: woainvzu-9
+    
+           application: woainvzu-9
         
 - Update configure (By using google_appengine)
     
@@ -98,19 +98,19 @@ The usage and configuration about Goagent and google_appengine
 
 ## Configuration for older Goagent version
 
-- <i>goagent/local/proxy.ini
+- `goagent/local/proxy.ini`
     
       ...
       [gae]
       appid = woainvzu
       ...
 
-- <i>goagent/server/python/app.yaml
+- `goagent/server/python/app.yaml`
     
       application: woainvzu
       ...
         
-- <i>Update configure
+- Update configure
     
       $ python appcfg.py update goagent/server/python/
 
